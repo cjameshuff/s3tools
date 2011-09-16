@@ -1,0 +1,25 @@
+
+CHANGELOG:
+----------------------------------------------------------------
+Version 0.x:
+
+Made s3ls output more useful for machine processing
+Removed &quot;'s from eTag
+Command_s3get() opens output files in binary format to avoid corruption. (need to check file usage elsewhere)
+
+Version 0.2:
+Features:
+Made s3ls list buckets by default, only doing deep listing with -r option.
+Added bucket aliases, local names for buckets. For example, you can define a "files" alias for a "files.domain.com" bucket.
+Added more flexible object paths: "bucket object",  "bucket:object", "bucket/object"
+
+Other:
+Cleaned up some of the code.
+Added some upper case file extensions to detected list. *.JPG files are recognized now.
+Fixed license.
+
+----------------------------------------------------------------
+Version 0.1:
+Fixed incorrect usage help call that kept s3tool from compiling.
+Added version number
+Added genidx command
