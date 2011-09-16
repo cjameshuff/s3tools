@@ -31,12 +31,10 @@ s3put: When key ends in /, append file name.
 CHANGELOG:
 ----------------------------------------------------------------
 Version 0.x:
-<<<<<<< HEAD
 
-=======
 Made s3ls output more useful for machine processing
 Removed &quot;'s from eTag
->>>>>>> 7f4f16192b711b01bf20119ca5deed1b186e029d
+Command_s3get() opens output files in binary format to avoid corruption. (need to check file usage elsewhere)
 
 Version 0.2:
 Features:

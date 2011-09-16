@@ -511,7 +511,7 @@ int Command_s3get(size_t wordc, CommandLine & cmds, AWS & aws)
         
         // If there's a remaining word after the bucket/key, it's a local file/directory path
         string filePath = (idx < (int)cmds.words.size())? cmds.words[idx] : objectKey;
-        ofstream fout(filePath.c_str());
+        ofstream fout(filePath.c_str(), ios_base::binary | ios_base::out);
         
         // TODO: if objectKey is null, get all objects in bucket, treating filePath as path prefix.
         
