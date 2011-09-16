@@ -9,6 +9,8 @@ openssl: http://www.openssl.org/
 
 If you're on Mac OS X, you already have libcurl and openssl. libcurlpp is the C++ wrapper for libcurl, and is available from http://curlpp.org/.
 
+If you're on Windows, you may find the following link to be of use: http://www.gamelogicdesign.com/index.php?cID=97
+
 ----------------------------------------------------------------
 Installation:
 ----------------------------------------------------------------
