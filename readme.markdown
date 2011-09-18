@@ -34,7 +34,7 @@ and then:
 
 	./s3tool install
 
-This will set up symlinks for the various s3 tools. The tool is usable without doing this step, but the commands will have to be accessed as "s3tool ls" instead of "s3ls", "s3tool put" instead of "s3put", etc.
+This will set up symlinks for the various s3 tools. The tool is usable without doing this step, but the commands will have to be accessed as "`s3tool ls`" instead of "`s3ls`", "`s3tool put`" instead of "`s3put`", etc.
 
 You will also need to set up a credentials file. This is a plain text file with at least three lines specifying a key ID, secret key, and a name identifying the credentials set. This file may also specify bucket aliases (these aliases are only seen and handled by s3tool, and do not exist on S3 itself).
 
@@ -92,7 +92,7 @@ PERMISSION: a canned ACL:
 
 TYPE: a MIME content-type
 METADATA: a HTML header and data string, multiple metadata may be specified
-"s3wput" can be used as a shortcut for "s3put -ppublic-read"
+"`s3wput`" can be used as a shortcut for "`s3put -ppublic-read`"
 
 ----------------------------------------------------------------
 Get object from S3:
@@ -109,16 +109,16 @@ Move S3 object:
 
 	s3mv SRC_OBJECT_PATH DST_OBJECT_PATH
 
-If bucket is not specified in DST\_OBJECT\_PATH, it is assumed to be the same
-bucket as that specified in SRC\_OBJECT\_PATH.
+If bucket is not specified in `DST_OBJECT_PATH`, it is assumed to be the same
+bucket as that specified in `SRC_OBJECT_PATH`.
 
 ----------------------------------------------------------------
 Copy S3 object:
 
 	s3cp SRC_OBJECT_PATH DST_OBJECT_PATH
 
-If bucket is not specified in DST\_OBJECT\_PATH, it is assumed to be the same
-bucket as that specified in SRC\_OBJECT\_PATH.
+If bucket is not specified in `DST_OBJECT_PATH`, it is assumed to be the same
+bucket as that specified in `SRC_OBJECT_PATH`.
 
 ----------------------------------------------------------------
 Remove object:
@@ -141,7 +141,7 @@ Set access to bucket or object with canned ACL:
 	s3setbktacl BUCKET_NAME PERMISSION
 	s3setacl OBJECT_PATH PERMISSION
 
-where PERMISSION is a canned ACL:
+where `PERMISSION` is a canned ACL:
 
 	private
 	public-read
